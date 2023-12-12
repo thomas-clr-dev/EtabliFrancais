@@ -11,19 +11,24 @@
 
 <body>
     <div class="nav" style="background-image: url({{ asset('img/header.png') }});">
-        <div class="colonne1">
-            <a href="{{ route('accueil') }}"><img class="Logo" src="{{ asset('img/logo-large.png') }}"></a>
+        <div class="blur">
+            <div class="colonne1">
+                <a href="{{ route('accueil') }}"><img class="Logo" src="{{ asset('img/logo-large.png') }}"
+                        onmouseover="this.src='{{ asset('img/logo-large-white.png') }}'"
+                        onmouseout="this.src='{{ asset('img/logo-large.png') }}'"></a>
+            </div>
+            <div class="colonne2">
+                <a class="nav-item" href="#accueil">Accueil</a>
+                <a class="nav-item" href="#nosartisans">Nos artisans</a>
+                <a class="nav-item" href="#boutique">Boutique</a>
+                <a class="nav-item" href="#Contact">Contact</a>
+            </div>
+            <div class="colonne3">
+                <a href=""><img class="compte" src="{{ asset('img/profil.png') }}"></a>
+                <a href=""><img class="panier" src="{{ asset('img/cart.png') }}"></a>
+            </div>
         </div>
-        <div class="colonne2">
-            <a href="#accueil">Accueil</a>
-            <a href="#nosartisans">Nos artisans</a>
-            <a href="#boutique">Boutique</a>
-            <a href="#Contact">Contact</a>
-        </div>
-        <div class="colonne3">
-            <a href=""><img class="compte" src="{{ asset('img/profil.png') }}"></a>
-            <a href=""><img class="panier" src="{{ asset('img/cart.png') }}"></a>
-        </div>
+
     </div>
 
     <div class="header">
@@ -98,7 +103,7 @@
             <h4>Accueil <br> nos artisans <br> boutique <br> contact <br> compte <br> panier</h4>
         </div>
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
+            <img class="logo3" src="{{ asset('img/logo-white.png') }}">
             <h4>Mention Légales <br> Politique de confidentialité</h4>
         </div>
         <div>

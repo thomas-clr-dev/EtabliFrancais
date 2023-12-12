@@ -1,20 +1,33 @@
 body {
     margin: 0;
     font-family: "casablanca-urw", "tomarik-display", sans-serif;
+    background-color: #F2F2F2;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 150px;
     background-size: cover;
     background-position: center center;
 }
 
+.blur{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #F2F2F2cc;
+}
+
 .colonne1 {
-    background-color: #f9d4afcc;
-    opacity: 0.8;
+    /* background-color: #f9d4afcc; */
+}
+
+.colonne1:hover {
+    background-color: #59362ecc;
+    transition: all 0.1s ease-in-out;
 }
 
 .Logo {
@@ -22,28 +35,47 @@ body {
 }
 
 .colonne2 {
-    background-color: #f9d4afcc;
-    opacity: 0.8;
+    /* background-color: #f9d4afcc; */
     font-size: 35px;
-    padding: 40px;
+    padding: 40px 0;
+    border-radius: 12px;
 }
 
-a {
+a.nav-item {
     text-decoration: none;
     font-size: 2rem;
-    padding: 8px 16px;
+    padding: 43px 16px;
     color: inherit;
     margin: 0 10px; /* Ajoute de la marge entre les liens */
+}
+
+a.nav-item:last-child {
+    margin-right: 0; /* Enlève la marge à droite du dernier lien */
+}
+
+a.nav-item:first-child {
+    margin-left: 0; /* Enlève la marge à gauche du premier lien */
+}
+
+.nav-item:hover {
+    background-color: #59362ecc;
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .colonne3 {
     margin-left: 40px;
 }
 
+.colonne3 img:hover {
+    background-color: #59362ecc;
+    transition: all 0.3s ease-in-out;
+}
+
 .colonne3 img {
     width: 50px;
     height: 50px;
-    background-color: #f9d4afcc;
+    /* background-color: #f9d4afcc; */
     padding: 10px;
 }
 
@@ -58,7 +90,6 @@ a {
 }
 
 .header {
-    background-color: #a67563;
     font-size: 40px;
     margin-top: 40px;
 }
@@ -67,6 +98,7 @@ h1 {
     text-align: center;
     margin: 0%;
     font-size: 3rem;
+    color: #F28729;
 }
 
 .métiers {
