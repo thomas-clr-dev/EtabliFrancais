@@ -18,7 +18,7 @@ body {
 }
 
 .Logo {
-    width: 150px;
+    width: 250px;
 }
 
 .colonne2 {
@@ -60,6 +60,7 @@ a {
 .header {
     background-color: #a67563;
     font-size: 40px;
+    margin-top: 40px;
 }
 
 h1 {
@@ -107,7 +108,7 @@ h2 {
 }
 
 .logo3 {
-    height: 400px;
+    height: 250px;
     margin: 30px;
 }
 

@@ -12,7 +12,7 @@
 <body>
     <div class="nav" style="background-image: url({{ asset('img/header.png') }});">
         <div class="colonne1">
-            <a href="{{ route('accueil') }}"><img class="Logo" src="{{ asset('img/logo.png') }}"></a>
+            <a href="{{ route('accueil') }}"><img class="Logo" src="{{ asset('img/logo-large.png') }}"></a>
         </div>
         <div class="colonne2">
             <a href="#accueil">Accueil</a>
