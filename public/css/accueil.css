@@ -37,7 +37,7 @@ a {
 }
 
 .colonne3 {
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .colonne3 img {
@@ -66,4 +66,91 @@ h1 {
     text-align: center;
     margin: 0%;
     font-size: 3rem;
+}
+
+.métiers {
+    display: flex;
+    background-image: url(file:///C:/Users/belle/Documents/MDS/PARTIEL/Images/foret.jpg);
+}
+
+.bvm {
+    border-radius: 5%;
+    height: 350px;
+    width: 500px;
+    margin: 5%;
+    margin-right: 50px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0%;
+    padding: 20px;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.fond {
+    background-color: #59362e;
+}
+
+.entreprise {
+    background-color: #59362e;
+    display: flex;
+    justify-content: center;
+}
+
+.logo3 {
+    height: 400px;
+    margin: 30px;
+}
+
+.entreprise p {
+    color: white;
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.entreprise2 {
+    background-color: #59362e;
+    display: flex;
+    justify-content: center;
+}
+
+.entreprise2 img {
+    height: 200px;
+    margin: 30px;
+}
+
+.entreprise2 p {
+    color: white;
+    font-size: 12px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.fond2 h2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.footer img {
+    height: 100px;
 }
