@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-image: url(file:///C:/Users/belle/Documents/MDS/PARTIEL/Images/Navbar2.jpg);
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.colonne1 {
+    background-color: white;
+    opacity: 0.8;
+    margin: 100px;
+}
+
+.Logo {
+    width: 270px;
+}
+
+.colonne2 {
+    background-color: white;
+    opacity: 0.8;
+    font-size: 35px;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: inherit;
+    margin: 0 10px; /* Ajoute de la marge entre les liens */
+}
+
+.colonne3 {
+    background-color: white;
+    opacity: 0.8;
+    margin-left: 80px;
+}
+
+.compte {
+    height: 120px;
+}
+
+.panier {
+    height: 120px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.header {
+    background-color: #a67563;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0%;
+}
