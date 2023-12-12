@@ -12,7 +12,7 @@
 <body>
     <div class="nav" style="background-image: url({{ asset('img/header.png') }});">
         <div class="colonne1">
-            <img class="Logo" src="{{ asset('img/logo.png') }}">
+            <a href="{{ route('accueil') }}"><img class="Logo" src="{{ asset('img/logo.png') }}"></a>
         </div>
         <div class="colonne2">
             <a href="#accueil">Accueil</a>
@@ -21,8 +21,8 @@
             <a href="#Contact">Contact</a>
         </div>
         <div class="colonne3">
-            <img class="compte" src="{{ asset('img/profil.png') }}">
-            <img class="panier" src="{{ asset('img/cart.png') }}">
+            <a href=""><img class="compte" src="{{ asset('img/profil.png') }}"></a>
+            <a href=""><img class="panier" src="{{ asset('img/cart.png') }}"></a>
         </div>
     </div>
 
