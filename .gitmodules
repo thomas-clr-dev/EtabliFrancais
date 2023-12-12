@@ -1,0 +1,3 @@
+[submodule "EtabliFrancais"]
+	path = EtabliFrancais
+	url = https://github.com/thomas-clr-dev/EtabliFrancais.git
