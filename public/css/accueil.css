@@ -89,9 +89,15 @@ a.nav-item:first-child {
     margin-right: 10px;
 }
 
+.white-filter {
+    background-color: #F2F2F2aa;
+    height: 100%;
+}
+
 .header {
     font-size: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 4px solid #414141;
 }
 
 h1 {
@@ -103,7 +109,6 @@ h1 {
 
 .métiers {
     display: flex;
-    background-image: url(file:///C:/Users/belle/Documents/MDS/PARTIEL/Images/foret.jpg);
 }
 
 .bvm {
@@ -113,6 +118,20 @@ h1 {
     margin: 5%;
     margin-right: 50px;
     margin-bottom: 0%;
+}
+
+.bvm {
+    box-shadow: 5px 5px 5px rgb(98, 98, 98);
+}
+
+.btn-s1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.CTA {
 }
 
 h2 {
