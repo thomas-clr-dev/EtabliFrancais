@@ -32,7 +32,6 @@
                         <a class="bouton" href="{{ route('ebenisterie') }}">Découvrir nos artisans</a>
                     </div>
                 </div>
-                Manque carousel
             </div>
 
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
@@ -52,10 +51,9 @@
                             et l’ouvrage en verre. Depuis l’Égypte ancienne, <br> le verre fascine par ses propriétés
                             étranges. Translucide ou transparent, il se travaille au feu, <br> un peu comme un métal.
                         </p>
-                        <a class="bouton">Découvrir nos artisans</a>
+                        <a class="bouton" href="{{ route('verrerie') }}">Découvrir nos artisans</a>
                     </div>
                 </div>
-                Manque carousel
             </div>
 
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
@@ -74,10 +72,9 @@
                             marteau.
                             <br>Les ouvrages de ferronnerie sont réalisés par un ferronnier ou un forgeron.
                         </p>
-                        <a class="bouton">Découvrir nos artisans</a>
+                        <a class="bouton" href="{{ route('ferronerie') }}">Découvrir nos artisans</a>
                     </div>
                 </div>
-                Manque caroussel
             </div>
             <label for="carousel-3" class="carousel-control prev control-1">‹</label>
             <label for="carousel-2" class="carousel-control next control-1">›</label>

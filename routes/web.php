@@ -41,3 +41,10 @@ Route::get('/artisans/ebenisterie', function () {
     return view('ebenisterie');
 })->name('ebenisterie');
 
+Route::get('/artisans/ferronerie', function () {
+    return view('ferronerie');
+})->name('ferronerie');
+
+Route::get('/artisans/verrerie', function () {
+    return view('verrerie');
+})->name('verrerie');
