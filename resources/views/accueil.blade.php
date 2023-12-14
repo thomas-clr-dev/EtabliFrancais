@@ -23,7 +23,7 @@
             </div>
 
             <div class="btn-s1">
-                <button class="CTA">Découvrez nos artisans</button>
+                <a class="CTA">Découvrez nos artisans</a>
             </div>
         </div>
 
@@ -38,11 +38,7 @@
             <img class="logo3" src="{{ asset('img/logo.png') }}">
         </div>
         <div>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun<br> ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo <br>consequat. Duis aute irure dolor in reprehenderit <br>in voluptate velit esse
-                cillum dolore eu fugiat <br>nulla pariatur. Excepteur sint occaecat cupidatat non<br> proident, sunt in
-                culpa qui officia <br>deserunt mollit anim id est laborum."</p>
+            <p>Chez l'établi français, nous croyons en la beauté de l'artisanat authentique et en la passion des créateurs talentueux. Notre marketplace est bien plus qu'une plateforme de vente en ligne, c'est un espace dédié à la célébration des artisans français. Nous nous engageons à mettre en lumière leurs créations uniques, façonnées avec soin, créativité et expertise. Les clients découvrent une collection exceptionnelle d'œuvres artisanales, allant des pièces traditionnelles aux créations contemporaines. Nous sommes fiers de soutenir une communauté d'artisans passionnés, en favorisant des échanges équitables et durables. Chaque achat effectué sur notre plateforme contribue directement à soutenir ces artisans, à préserver des techniques ancestrales et à encourager la créativité artisanale.</p>
         </div>
     </div>
 
@@ -52,42 +48,25 @@
 
     <div class="entreprise2">
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
-            <p>iut uycuyfc uy</p>
+            <img class="logo3" src="{{ asset('img/Photo-équipe/Photo-Thomas.png') }}">
+            <p>Développeur Web</p>
         </div>
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
-            <p>iut uycuyfc uy</p>
+            <img class="logo3" src="{{ asset('img/Photo-équipe/Photo_Jules.png') }}">
+            <p>Développeur Web</p>
         </div>
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
-            <p>iut uycuyfc uy</p>
+            <img class="logo3" src="{{ asset('img/Photo-équipe/Photo_alix_pro.png') }}">
+            <p>Designer</p>
         </div>
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
-            <p>iut uycuyfc uy</p>
+            <img class="logo3" src="{{ asset('img/Photo-équipe/Photo_samson.png') }}">
+            <p>Web marketer</p>
         </div>
         <div>
-            <img class="logo3" src="{{ asset('img/logo.png') }}">
-            <p>iut uycuyfc uy</p>
+            <img class="logo3" src="{{ asset('img/Photo-équipe/Photo_alex.png') }}">
+            <p>Community Manager</p>
         </div>
     </div>
 
-    <div class="footer">
-        <div>
-            <h3>Plan du site</h3>
-            <h4>Accueil <br> nos artisans <br> boutique <br> contact <br> compte <br> panier</h4>
-        </div>
-        <div>
-            <img class="logo3" src="{{ asset('img/logo-white.png') }}">
-            <h4>Mention Légales <br> Politique de confidentialité</h4>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <h4>Email <br> Téléphone <br> Adresse <br> Insta <br> Facebook</h4>
-        </div>
-    </div>
-    
-</body>
-
-</html>
+@include('../templates/footer')

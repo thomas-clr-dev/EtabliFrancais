@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "casablanca-urw", "tomarik-display", sans-serif;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 .nav {
@@ -13,12 +13,12 @@ body {
     background-position: center center;
 }
 
-.blur{
+.blur {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    background-color: #F2F2F2cc;
+    background-color: #f2f2f2cc;
 }
 
 .colonne1 {
@@ -75,7 +75,6 @@ a.nav-item:first-child {
 .colonne3 img {
     width: 50px;
     height: 50px;
-    /* background-color: #f9d4afcc; */
     padding: 10px;
 }
 
@@ -90,7 +89,7 @@ a.nav-item:first-child {
 }
 
 .white-filter {
-    background-color: #F2F2F2aa;
+    background-color: #f2f2f2aa;
     height: 100%;
 }
 
@@ -104,27 +103,27 @@ h1 {
     text-align: center;
     margin: 0%;
     font-size: 3rem;
-    color: #F28729;
+    color: #f28729;
 }
 
 .métiers {
     display: flex;
+    justify-content: center;
 }
 
 .bvm {
     border-radius: 5%;
     height: 350px;
     width: 500px;
-    margin: 5%;
-    margin-right: 50px;
-    margin-bottom: 0%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .bvm {
     box-shadow: 5px 5px 5px rgb(98, 98, 98);
 }
 
-.btn-s1{
+.btn-s1 {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -132,6 +131,39 @@ h1 {
     font-weight: bold;
 }
 .CTA {
+    height: 55px;
+    width: 160px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #f28729;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.CTA2 {
+    height: 30px;
+    width: 160px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #f28729;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 h2 {
@@ -158,15 +190,23 @@ h2 {
     justify-content: center;
 }
 
-.logo3 {
+.entreprise .logo3 {
     height: 250px;
     margin: 30px;
+    border-radius: 90%;
+}
+
+.logo3 {
+    height: 300px;
+    margin: 30px;
+    border-radius: 90%;
 }
 
 .entreprise p {
     color: white;
     font-size: 18px;
     padding-top: 50px;
+    width: 800px;
 }
 
 .entreprise2 {
@@ -177,14 +217,236 @@ h2 {
 
 .entreprise2 img {
     height: 200px;
-    margin: 30px;
+    margin: 30px 30px 0 30px;
+    background-color: #f2f2f2;
 }
 
 .entreprise2 p {
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
     margin-top: 0%;
     text-align: center;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: 300px;
+    width: 500px;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked
+    ~ .control-1
+    ~ .carousel-indicators
+    li:nth-child(1)
+    .carousel-bullet,
+#carousel-2:checked
+    ~ .control-2
+    ~ .carousel-indicators
+    li:nth-child(2)
+    .carousel-bullet,
+#carousel-3:checked
+    ~ .control-3
+    ~ .carousel-indicators
+    li:nth-child(3)
+    .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+        -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.ébénisterie {
+    display: flex;
+    justify-content: center;
+}
+
+.ébénisterie h2 {
+    color: black;
+}
+
+.bouton {
+    margin-left: 325px; /* Ajout de marge à gauche */
+    margin-top: 50px; /* Ajout de marge en haut */
+    height: 30px; /* Hauteur du bouton */
+    width: 200px; /* Largeur du bouton */
+    display: inline-block; /* Affichage en ligne */
+    padding: 10px 20px; /* Ajout de marge interne autour du texte */
+    font-size: 1.5rem; /* Taille du texte */
+    text-align: center; /* Centrage horizontal du texte */
+    vertical-align: middle; /* Centrage vertical du texte */
+    text-decoration: none; /* Suppression du soulignement des liens */
+    background-color: #f28729; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.ArtisansBois .white-filter {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.boite {
+    border: 10px solid #59362e; /* Crée un contour noir de 2 pixels */
+    padding: 20px;
+    margin: 4%;
+    text-align: center;
+    width: 450px;
+    height: 530px;
+    background-color: #f2F2F2;
+}
+
+.b {
+    border-radius: 5%;
+    height: 260px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.texte p {
+    margin: auto;
+}
+
+.texte h3 {
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 150px;
+}
+
+.H-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .fond2 h2 {
@@ -194,15 +456,98 @@ h2 {
     color: black;
 }
 
-.footer {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
+.logo-footer {
+    height: 150px;
 }
 
-.footer img {
-    height: 100px;
+.footer .sitemap,
+.footer .contact {
+    list-style: none;
+    padding-left: 0;
 }
+
+.container {
+    max-width: 300px;
+    padding: 16px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 20px; /* Espacement entre tous les champs sauf les input */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 360px;
+    height: 60px;
+    margin: 0 20px;
+    resize: vertical;
+}
+
+label[for="message"] {
+    border-radius: 4px;
+    padding-left: 6px;
+    width: 370px;
+    margin: 0 15px 15px 15px;
+}
+
+input[type="submit"] {
+    background-color: #f28729;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.container p {
+    text-align: center;
+}
+
+.contact-container {
+    background-color: white;
+    max-width: 400px;
+    height: auto;
+    padding: 16px;;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-column-left {
+    margin: 0 10px 0 20px;
+}
+
+.form-column-right {
+    margin: 0 20px 0 10px;
+}
+
